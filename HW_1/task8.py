@@ -10,7 +10,8 @@
 n = int(input("Input m\n"))
 m = int(input("Input n\n"))
 k = int(input("Input k\n"))
-if k <= n * m and (k % n == 0 or k % m == 0):
+if 0 < k < n * m and (k % n == 0 or k % m == 0):
     print(f"{n} {m} {k} -> yes")
 else:
     print(f"{n} {m} {k} -> no")
+    

@@ -11,11 +11,9 @@
 #     -> 1
 
 import random
-import numpy as np
 
-N = int(input('Введите длину массива от 1 до .... \n'))
-rand_lst = tuple(np.random.randint(100, size=N))
+n = int(input('Введите длину массива от 1 до .... \n'))
+rand_lst = [random.randint(1, n) for _ in range(n)]
 print(rand_lst)
-x = int(input('Введите число x \n'))
-
-print(*a)
+x = input("Введите заначение x ..... \n")
+print(rand_lst.count(int(x)))

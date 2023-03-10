@@ -5,3 +5,12 @@
 
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
+
+a = int(input("Введите число А: "))
+b = int(input("Введите число B: "))
+
+def degr(a,b):
+    if b == 0:
+        return 1
+    return a * degr(a, b - 1)
+print(degr(a, b))

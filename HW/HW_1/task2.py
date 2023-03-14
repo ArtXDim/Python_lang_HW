@@ -14,5 +14,5 @@ print(f"{a} -> {a // 100 + a % 100 // 10 + a % 10}"
 
 # with string
 b = input("Input three-digit number:\n")
-print(f"{b} -> {int(b[0])+int(b[1])+ int(b[2])} " 
+print(f"{b} -> {int(b[0])+int(b[1])+ int(b[2])} "
       f"({int(b[0])} + {int(b[1])} + {int(b[2])})")

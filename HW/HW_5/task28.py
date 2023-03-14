@@ -6,3 +6,16 @@
 
 # 2 2
 #     4 
+
+def summa(a, b):
+    if b == 0:
+        return a
+    elif a == 0:
+        return b
+    else:
+        return summa(a + 1, b - 1)
+
+a = int(input("Введите число A: "))
+b = int(input("Введите число B: "))
+
+print(summa(a, b))
